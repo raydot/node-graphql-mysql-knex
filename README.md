@@ -1,2 +1,4 @@
 # node-graphql-mysql-knex
-Following an intermediate GraphQL tutorial.  See README for details.
+Intermediate GraphQL tutorial.
+
+Tutorial from Alien35 at https://steemit.com/graphql/@alien35/creating-a-scalable-api-using-node-graphql-mysql-and-knex
