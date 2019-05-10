@@ -12,13 +12,12 @@ module.exports = (buildSchema) => {
 				isbn: String
 			}
 			type Query {
-				books(id: ID): [book]
+				books(id: ID): [Book]
 			}`
 		),
 		booksQuery: `
 			{
 				books {
-					id
 					name
 					isbn
 				}

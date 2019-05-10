@@ -7,12 +7,13 @@ const connection = require('../config.js');
 
 module.exports = {
 	all: function(req, res) {
-		connection.query('SELECT * FROM books', (err, rows) => {
+		connection.query('SELECT * FROM books', async (err, rows) => {
 			if (!err) {
+				const response = await graphql(booksSchema, booksQuery, {books: rows});
 				res.setHeader('Content-Type', 'application/json');
 				res.status(200).send(JSON.stringify({
 					'result' : 'success!',
-					'data': rows
+					'data': response.data
 				})
 				);
 			} else {
@@ -43,11 +44,13 @@ module.exports = {
 	},
 
 	get: function (req, res){
-		connection.query('SELECT * FROM books where id = ? LIMIT 1', [req.params.id], (err, rows) => {
+		//connection.query('SELECT * FROM books where id = ? LIMIT 1', [req.params.id], (err, rows) => {
+		connection.query('SELECT * from books where id = ?', [req.params.id], async(err, rows) => {
+			const response = await graphql(bookSchema, bookQuery, {book: rows[0]});
 			res.setHeader('Content-Type', 'application/json');
 			res.status(200).send(JSON.stringify({
 				'result'	: 'success!',
-				'data' 		: rows[0]
+				'data' 		: response.data
 			})
 			);
 		})

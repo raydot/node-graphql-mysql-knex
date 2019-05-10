@@ -22,3 +22,5 @@ A few mistakes with the tutorial:
 		The code that goes into the section headed <strong>Get your CRUD on</strong> should go into the books-controller.js file you just created the step before.
 	</li>
 </ol>
+
+All-in-all this is a pretty sweet tutorial!  Too bad it's on Steemit.  It would get a lot more attention on Medium. 

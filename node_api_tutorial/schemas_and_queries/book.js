@@ -12,7 +12,6 @@ module.exports = (buildSchema) => {
 		),
 		bookQuery: `{
 			book {
-				id
 				name
 				isbn
 			}
