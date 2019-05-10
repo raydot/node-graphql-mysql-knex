@@ -15,4 +15,7 @@ A few mistakes with the tutorial:
 	<li>  
 		serve-favicon is not installed.  `npm i serve-favicon`.
 	</li>
+	<li>  
+		Be sure and tweak your `.gitignore` so it doesn't include db config files.
+	</li>
 </ol>
