@@ -15,4 +15,10 @@ A few mistakes with the tutorial:
 	<li>  
 		serve-favicon is not installed.  `npm i serve-favicon`.
 	</li>
+	<li>  
+		Be sure and tweak your `.gitignore` so it doesn't include db config files.
+	</li>
+	<li>
+		The code that goes into the section headed <strong>Get your CRUD on</strong> should go into the books-controller.js file you just created the step before.
+	</li>
 </ol>
