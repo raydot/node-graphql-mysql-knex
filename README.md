@@ -12,7 +12,7 @@ A few mistakes with the tutorial:
 	</li>
 
 	<li>
-		DO NOT DELETE THE 'VIEWS' FOLDER as the tutorial suggests.
+		DO NOT DELETE THE 'VIEWS' FOLDER as the tutorial suggests.  Change the suffixes of those files from `.jade` to `.pug`.
 	</li>
 
 	<li>  
