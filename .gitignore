@@ -57,5 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+#localhost mysql config
+config.js
+db
+
 # next.js build output
 .next
